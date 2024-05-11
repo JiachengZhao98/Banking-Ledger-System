@@ -1,10 +1,6 @@
-**Important: Don't forget to update the [Candidate README](#candidate-readme) section**
-
 Real-time Transaction Challenge
 ===============================
 ## Overview
-Welcome to Current's take-home technical assessment for backend engineers! We appreciate you taking the time to complete this, and we're excited to see what you come up with.
-
 You are tasked with building a simple bank ledger system that utilizes the [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) pattern to maintain a transaction history. The system should allow users to perform basic banking operations such as depositing funds, withdrawing funds, and checking balances. The ledger should maintain a complete and immutable record of all transactions, enabling auditability and reconstruction of account balances at any point in time.
 
 ## Details
@@ -167,21 +163,10 @@ During the design and implementation of the banking ledger system, the following
 
 ---
 
-## Bonus: Deployment considerations
+## Deployment considerations
 - **Cloud Provider**: AWS for its robust and scalable infrastructure.
 - **Containerization**: Docker for packaging the application, ensuring consistency across development, testing, and production environments.
 - **Orchestration**: Kubernetes to manage the application deployment, scaling, and management.
 - **Database**: Amazon RDS or DynamoDB depending on the consistency requirements and structure of the data.
 - **CI/CD**: Jenkins or GitHub Actions for continuous integration and deployment, automating the build, test, and deployment process.
 - **Monitoring and Logging**: Integration with tools like Prometheus for monitoring and ELK Stack for logging to ensure high availability and real-time monitoring of the application health.
-
-
-## License
-
-At CodeScreen, we strongly value the integrity and privacy of our assessments. As a result, this repository is under exclusive copyright, which means you **do not** have permission to share your solution to this test publicly (i.e., inside a public GitHub/GitLab repo, on Reddit, etc.). <br>
-
-## Submitting your solution
-
-Please push your changes to the `main branch` of this repository. You can push one or more commits. <br>
-
-Once you are finished with the task, please click the `Submit Solution` link on <a href="https://app.codescreen.com/candidate/882a100f-3627-4d24-9f11-bc09fed4dbba" target="_blank">this screen</a>.

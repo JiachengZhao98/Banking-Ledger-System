@@ -37,7 +37,7 @@ Here’s a breakdown of the key criteria we’ll be considering when grading you
 
 **Documentation and Clarity:** We’ll assess the clarity of your documentation, including comments within the code, README files, architectural diagrams, and explanations of design decisions. Your documentation should provide sufficient context for reviewers to understand the problem, solution, and implementation details.
 
-# Candidate README
+
 ## Bootstrap instructions
 ### Prerequisites
 Before you run this server locally, ensure you have the following installed:
@@ -49,15 +49,15 @@ Before you run this server locally, ensure you have the following installed:
 1. **Clone the Repository:**
 
    ```
-   gh repo clone codescreen/CodeScreen_entqzv3j
-   
-   cd CodeScreen_entqzv3j
+   gh repo clone JiachengZhao98/Banking-Ledger-System
+
+   cd Banking-Ledger-System
    ```
 
 2. **Build the Project:**
 
      `mvn clean install`
-    
+
 3. **Run the Application:**
 
 	You can run the application using command line: `mvn spring-boot:run`, or using the built-in tools from the IDE of your choice. The server will be started on `http://localhost:8080`.
@@ -65,9 +65,9 @@ Before you run this server locally, ensure you have the following installed:
 4. **Access the API:**
    You can access the API endpoints using any HTTP client like Postman or via curl:
     - for **ping**: `curl http://localhost:8080/api/ping`
-   
-   - for **load**: 
-   ``` 
+
+   - for **load**:
+   ```
    curl -X PUT http://localhost:8080/api/load \
      -H "Content-Type: application/json" \
      -d '{
@@ -80,10 +80,10 @@ Before you run this server locally, ensure you have the following installed:
      }
      }'
    ```
-   
-   - for **authorization**: 
 
-   ``` 
+   - for **authorization**:
+
+   ```
    curl -X PUT http://localhost:8080/api/authorization \
    -H "Content-Type: application/json" \
    -d '{
@@ -96,8 +96,8 @@ Before you run this server locally, ensure you have the following installed:
    }
    }'
     ```
-   
-   - for **checkBalance**: 
+
+   - for **checkBalance**:
 
     ```
    curl -X GET http://localhost:8080/api/checkBalance \
@@ -109,7 +109,7 @@ Before you run this server locally, ensure you have the following installed:
    ```
 
    **Format of TransactionRequest for load and authorization:**
-    
+
     ```
     {
     "userId": "string",
